@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+    font-family: "Ashot";
+    src: local("Ashot V2"), url("./fonts/ashot.ttf") format("truetype");
+    font-weight: bold;
+}
+
+.hw {
+    font-family: "Ashot";
+    font-size: 19pt;
+    display: inline;   
+}
+
+.wiggle {
+    position: relative;
+}
+
+.wiggle-sub {
+    top: 1px;
+    position: relative;
+}
+
+.red {
+    color:red;
+}
+.blue {
+    color: blue;
+}
+
+#space {
+    background: mediumvioletred;
+    font-size: 5px;
+}
+
+.preview {
+    margin: 100px;
+    border: solid;
+    border-color: black;
+}
+
+@media print {
+    .no-print, .no-print * {
+        display: none !important;
+    }
+    
+    .preview {
+        margin: 0px;
+        border: none;
+        border-color: none;
+    }
+}
